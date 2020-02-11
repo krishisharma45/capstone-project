@@ -18,6 +18,14 @@ costa_rica_data = costa_rica_data.select_dtypes(include=[np.number], exclude=[np
 #Split data into 80% train, 20% validation split
 X_train, X_test, y_train, y_test = train_test_split(costa_rica_data.values, costa_rica_target.values, test_size= 0.2, random_state=42)
 
+#Fit a Decision Tree with hyperparameters to get a baseline idea of performance
+clf = DecisionTreeClassifier(criterion='gini', max_depth=75, random_state=42)
+model = clf.fit(X_train, y_train)
+train_score = model.score(X_train, y_train)
+test_score = model.score(X_test, y_test)
+print('Decision Tree Train Accuracy: '+str(round(train_score*100,2))+'%')
+print('Decision Tree Test Accuracy: '+str(round(test_score*100,2))+'%')
+
 #Run Feature Importance to extract relevant features
 features = model.feature_importances_
 features_dict = dict(zip(costa_rica_data.columns.values, features))
@@ -35,7 +43,7 @@ print('Decision Tree Validation Accuracy: '+str(round(val_score*100,2))+'%')
 
 #Save the model to disk
 filename = 'capstone_ml_final.sav'
-pickle.dump(model, open, (filename, 'wb'))
+pickle.dump(model, open(filename, 'wb'), protocol=2)
 
 #Load the model from the disk
 loaded_model = pickle.load(open(filename, 'rb'))
