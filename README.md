@@ -17,6 +17,5 @@ Ten folds were used (leveraging the same KFolds package that was used in the mac
 ## Scaling with Dask
 Dask was used to scale the machine learning prototype to make it faster on larger datasets (particularly the test dataset, which is 2.5 times larger than the train data set). The Dask module was used to recreate the same RandomForestClassifier algorithm that was successful in the final machine learning model.
 
-----------------------------------------------------------------------
-
-The future of this project is to create an API for deployment to a web application.
+## Application Deployment
+This application was deployed using Flask. The target audience for the initial phase of the application is foreign aid donors. The purpose of the application is to help donors determine how dire the need of a household is by using non-econometric factors to predict the household's vulnerability to poverty. The future of this application includes adding tailored advice for the four different classes of need (extremely vulnerable, highly vulnerable, somewhat vulnerable, not vulnerable). 
