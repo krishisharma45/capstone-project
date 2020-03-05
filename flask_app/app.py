@@ -8,7 +8,6 @@ def model(input_list):
     input = np.array(input_list).reshape(1, 10)
     with open('model.pkl', 'rb') as f:
         loaded_model = pickle.load(f)
-    #loaded_model = pickle.load(open('model.pkl'), 'rb')
     result = loaded_model.predict(input)
     return result[0]
 
@@ -24,13 +23,13 @@ def display_prediction():
         input_list = list(map(float, input_list))
         result = model(input_list)
         if int(result) == 1:
-            prediction = 'Very vulnerable'
+            prediction = 'Extremely Vulnerable'
         elif int(result) == 2:
-            prediction = 'Somewhat vulnerable'
+            prediction = 'Highly Vulnerable'
         elif int(result) == 3:
-            prediction = 'Vulnerable'
+            prediction = 'Somewhat Vulnerable'
         else:
-            prediction = 'Not vulnerable'
+            prediction = 'Not Vulnerable'
         return render_template('results.html', prediction = prediction)
 
 if __name__ == '__main__':
