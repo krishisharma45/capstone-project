@@ -3,9 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Poverty Predictor</title>
+    <link rel="stylesheet" href="{{ styles_css }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h3>Predicted Poverty:</h3>
-    <div>{{ prediction }}</div>
+    <h1>Poverty Prediction</h1>
+    <br>
+    <br>
+    <p id='prediction'>{{ prediction }}</p>
+    <br>
+    <h3>If you would like to use our tool again, please click <a href='/'>here</a>!</h3>
   </body>
+  <footer id='results-footer'>Made with ❤️ by Krishi</footer>
 </html>
