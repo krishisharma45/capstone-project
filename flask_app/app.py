@@ -42,6 +42,15 @@ def display_prediction():
             return render_template('error.html')
         else:
             input_list = list(map(float, input_list))
+            input_list.append(input_list[1]**2)
+            input_list.append(input_list[2]**2)
+            input_list.append(input_list[3]**2)
+            input_list[5] = input_list[5]**2
+            input_list[6] = input_list[6]**2
+
+            list_order = [0, 1, 2, 3, 4, 5, 7, 9, 6, 8]
+            input_list = [input_list[i] for i in list_order]
+
             if validate_values(input_list) == False:
                 return render_template('error.html')
             else:
