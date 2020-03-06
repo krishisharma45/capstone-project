@@ -11,8 +11,7 @@
   <body>
     <h1>Aid Allocation Assistance</h1>
     <br>
-    <h2>To ensure efficient aid allocation, input the following information to determine a household's vulnerabiliy to poverty.</h2>
-    <br>
+    <h2>To ensure efficient aid allocation, input the following information to determine a household's vulnerability to poverty.</h2>
     <h4>Note: This application only takes numeric inputs and is currently only available for the country of Costa Rica. We plan to expand coverage in late 2020.</h4>
     <br>
     <form action = "/results" method = "POST" id='rectangles-form'>
@@ -21,11 +20,8 @@
         <p>Average years of education for adults (18+) <input type="text" name="education"/></p>
         <p>Average number of persons per room <input type="text" name="overcrowding"/></p>
         <p>Total number of cellphones in the house <input type="text" name="phones"/></p>
-        <p>Years of education of male head of household (squared) <input type="text" name="male"/></p>
-        <p>Number of children (0-19) in household (squared) <input type="text" name="kid_squ"/></p>
-        <p>Average number of persons per room (squared) <input type="text" name="over_squ"/></p>
-        <p>Dependency rate of household (squared) <input type="text" name="dependency"/></p>
-        <p>Average years of education for adults (18+) (squared) <input type="text" name="edu_squ"/>
+        <p>Years of education for male head of household <input type="text" name="male"/></p>
+        <p>Dependency rate of household <input type="text" name="dependency"/>
         <input type="submit" value="Submit"></p>
     </form>
   </body>
