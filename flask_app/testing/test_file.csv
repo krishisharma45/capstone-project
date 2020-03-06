@@ -1,0 +1,10 @@
+Id,rooms,hogar_nin,meaneduc,overcrowding,qmobilephone,SQBedjefe,SQBhogar_nin,SQBovercrowding,SQBdependency,SQBmeaned,Target,App Result
+ID_f46b0fb68,1,0,5.5,2.0,2,0,0,4.0,0.0,30.25,4,Not Vulnerable
+ID_4d206a96f,5,3,9.5,1.6666666,2,64,9,2.7777777,2.25,90.25,1,Extremely Vulnerable
+ID_f435c5e46,3,3,4.5,3.5,4,0,9,12.25,0.5625,20.25,2,Highly Vulnerable
+ID_2de72feaf,5,2,10.0,2.0,5,0,4,4.0,0.25,100.0,3,Somewhat Vulnerable
+ID_0e1476010,3,2,16.0,1.5,3,0,4,2.25,4.0,256.0,3,Somewhat Vulnerable
+ID_c328d19f1,4,0,6.25,2.0,0,4,0,4.0,1.0,39.0625,1,Extremely Vulnerable
+ID_a77f71b71,4,2,12.0,2.0,1,169,4,4.0,1.0,144.0,2,Highly Vulnerable
+ID_5e8c5d630,3,2,6.0,1.5,1,0,4,2.25,4.0,36.0,1,Extremely Vulnerable
+ID_380fb5e67,6,2,8.666667,1.25,4,0,4,1.5625,0.44444448,75.111115,4,Not Vulnerable
