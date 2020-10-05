@@ -3,4 +3,4 @@ numpy==1.17.2
 sklearn==0.0
 dask==2.5.2
 flask==1.1.1
-gunicorn==19.0.0
+gunicorn==19.5.0
